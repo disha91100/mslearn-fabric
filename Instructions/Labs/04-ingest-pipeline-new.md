@@ -50,7 +50,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
     - **Connection name**: *Specify a unique name*
     - **Authentication kind**: Basic (*Provide the username and password and note it in notepad*)
 
-5. Select **Next**. Then ensure the following settings are selected:
+6. Select **Next**. Then ensure the following settings are selected:
     - **Relative URL**: *Leave blank*
     - **Request method**: GET
     - **Additional headers**: *Leave blank*
@@ -58,44 +58,44 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
     - **Request timeout**: *Leave blank*
     - **Max concurrent connections**: *Leave blank*
 
-6. Select **Next**, and wait for the data to be sampled and then ensure that the following settings are selected:
+7. Select **Next**, and wait for the data to be sampled and then ensure that the following settings are selected:
     - **File format**: DelimitedText
     - **Column delimiter**: Comma (,)
     - **Row delimiter**: Line feed (\n)
     - **First row as header**: Selected
     - **Compression type**: None
 
-7. Select **Preview data** to see a sample of the data that will be ingested. Then close the data preview and select **Next**.
+8. Select **Preview data** to see a sample of the data that will be ingested. Then close the data preview and select **Next**.
 
-8. On the **Choose data destination** page, select your existing lakehouse.
+9. On the **Choose data destination** page, select your existing lakehouse.
 
     ![](./Images/imag12.png)
 
 
-9. Set the following data destination options, and then select **Next**:
+10. Set the following data destination options, and then select **Next**:
     - **Root folder**: Files
     - **Folder path name**: new_data
     - **File name**: sales.csv
     - **Copy behavior**: None
 
-10. Set the following file format options and then select **Next**:
+11. Set the following file format options and then select **Next**:
     - **File format**: DelimitedText
     - **Column delimiter**: Comma (,)
     - **Row delimiter**: Line feed (\n)
     - **Add header to file**: Selected
     - **Compression type**: None
 
-11. On the **Copy summary** page, review the details of your copy operation and then select **Save + Run**.
+12. On the **Copy summary** page, review the details of your copy operation and then select **Save + Run**.
 
     A new pipeline containing a **Copy Data** activity is created, as shown here:
 
     ![Screenshot of a pipeline with a Copy Data activity.](./Images/copy-data-pipeline2.png)
 
-12. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has succeeeded.
+13. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has succeeeded.
 
-13. In the menu bar on the left, select your lakehouse.
+14. In the menu bar on the left, select your lakehouse.
 
-14. On the **Home** page, in the **Lakehouse explorer** pane, expand **Files** and select the **new_data** folder to verify that the **sales.csv** file has been copied.
+15. On the **Home** page, in the **Lakehouse explorer** pane, expand **Files** and select the **new_data** folder to verify that the **sales.csv** file has been copied.
 
 ## Task 2 : Create a notebook
 
